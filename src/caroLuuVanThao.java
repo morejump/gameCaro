@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 
 public class caroLuuVanThao {
     public static void main(String[] args) {
-        JOptionPane.showMessageDialog(null, "Copy right 2016 by Luu Van Thao( 1381310069) - D8CNPM", "Game Caro", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Copyright 2016 by Luu Van Thao( 1381310069) - D8CNPM", "Game Caro", JOptionPane.INFORMATION_MESSAGE);
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (Exception ex) {
@@ -20,7 +20,7 @@ public class caroLuuVanThao {
         // this variable is used to set the size of matrix
         int size = -1;
         while (true) {
-            String result = JOptionPane.showInputDialog("Vui lòng chọn kích thước bàn cờ\nTối thiểu: 5, Tối đa: 20", "10");
+            String result = JOptionPane.showInputDialog("Vui lòng chọn kích thước bàn cờ\nTối thiểu: 5, Tối đa: 20", "16");
             if (result != null)
                 try {
                     size = Integer.parseInt(result);
@@ -227,8 +227,8 @@ class cuaSoTroChoi extends JFrame {
 
     private final int size;
 
-    private final NguoiChoi nguoiChoi1 = new NguoiChoi("Luu Van Thao 01", 'X');
-    private final NguoiChoi nguoiChoi2 = new NguoiChoi("Luu Van Thao 02", 'O');
+    private final NguoiChoi nguoiChoi1 = new NguoiChoi("Luu Thao 01", 'X');
+    private final NguoiChoi nguoiChoi2 = new NguoiChoi("Luu Thao 02", 'O');
     private NguoiChoi mCurrentNguoiChoi = null;
     private nutTroChoi[][] buttons;
     private int countEmpty;
